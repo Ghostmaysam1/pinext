@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar/Navbar.jsx"
 import AudienceSection from "../components/home/audienceSection/AudienceSection.jsx"
-import '../utils/css/border-gradient.css';
+import ServicesButton from "../components/home/servicesButton/ServicesButton.jsx"
 
 function HomeView() {
     return (
@@ -9,11 +9,8 @@ function HomeView() {
             <span className="h-[100px] w-full block"></span>
             <AudienceSection />
             <span className="h-[140px] w-full block"></span>
-            <div>
-                <button>
-                    <h5>خدمات</h5>
-                </button>
-            </div>
+            <ServicesButton />
+            {/* TODO */}
         </div>
     )
 }
