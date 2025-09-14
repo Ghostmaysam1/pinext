@@ -4,12 +4,11 @@ import { Link } from "react-router"
 function Navbar({ className }) {
     let cls = className ? ' ' + className : '';
     return (
-        <div className={"h-[110px] flex gap-[55px] items-center pt-[20px] justify-center" + cls}>
+        <div className={"h-[110px] flex gap-[55px] bg-background items-center pt-[20px] justify-center" + cls}>
             <img src="logo.svg" alt="logo" className="w-[78px]" />
             <div className="h-full w-[60%] flex justify-center items-center">
                 <ul className="flex justify-center items-center gap-5">
                     <li className="body-text"><Link to="#خدمات">خدمات</Link></li>
-                    <li className="body-text"><Link to="#درباره_ما">درباره ما</Link></li>
                     <li className="body-text"><Link to="#ارتباط_با_ما">ارتباط با ما</Link></li>
                     <li className="body-text"><Link to="#خانه">خانه</Link></li>
                     <li className="body-text"><Link to="#نمونه_کار">نمونه کار</Link></li>
@@ -18,7 +17,7 @@ function Navbar({ className }) {
                 </ul>
             </div>
             <div className="bg-accent flex justify-center items-center px-6 py-4 rounded-[8px]">
-                <h3>تماس بگیرید</h3>
+                <h5>تماس بگیرید</h5>
             </div>
         </div>
     )

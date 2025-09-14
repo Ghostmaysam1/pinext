@@ -10,7 +10,8 @@
     src: url('./assets/IRANSansX-DemiBold.ttf');
     font-weight: 600
 }
-@font-face {
+
+/* @font-face {
     font-family: 'Vazirmatn';
     src: url('./assets/vazirmatn/Vazir-Medium.ttf') format('ttf');
     src: url('./assets/vazirmatn/Vazir-Medium.woff') format('woff');
@@ -24,22 +25,18 @@
     src: url('./assets/vazirmatn/Vazir-Bold.woff') format('woff');
     src: url('./assets/vazirmatn/Vazir-Bold.woff2') format('woff2');
     font-weight: 700
-}
+} */
 
-@component {
-    .body-text {
-        font-family: var(--font-iransans);
-        font-size: 16px;
-        font-weight: var(--font-weight-medium);
-    }
+.body-text {
+    font-family: 'iransansX';
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
 }
 
 @theme {
     /* fonts */
     --font-iransans: 'iransansX'
-    --font-vazirmatn: 'Vazirmatn'
-
-    /* colors */
+    /* --font-vazirmatn: 'Vazirmatn' */
 
     --color-alert: #FF715B;
     --color-disable-text: #9E9EA7;
@@ -74,37 +71,32 @@
     --color-secondary-700: #6C6279;
     --color-secondary-800: #474151;
     --color-secondary-900: #232028;
-
-
-    
 }
 
-@layer components {
-  .typography {
+@layer base {
     h1 {
       font-size: 48px;
       font-weight: var(--font-weight-bold);
-      font-family: var(--font-vazirmatn)
+      font-family: 'iransansX';
     }
     h2 {
       font-size: 39px;
       font-weight: var(--font-weight-medium);
-      font-family: var(--font-vazirmatn)
+      font-family: 'iransansX';
     }
     h3 {
         font-size: 31px;
         font-weight: var(--font-weight-medium);
-        font-family: var(--font-iransans)
+        font-family: 'iransansX';
     }
     h4 {
         font-size: 25px;
         font-weight: var(--font-weight-medium);
-        font-family: var(--font-iransans)
+        font-family: 'iransansX';
     }
     h5 {
         font-size: 20px;
         font-weight: var(--font-weight-medium);
-        font-family: var(--font-iransans)
+        font-family: 'iransansX';
     }
-  }
 }
