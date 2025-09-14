@@ -1,17 +1,16 @@
 .gradient-box {
   display: flex;
   align-items: center;
-  width: 90%;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
   margin: auto;
-  max-width: 22em;
   position: relative;
-  padding: 30% 2em;
-  box-sizing: border-box;
   color: #fff;
-  background: #000;
+  background: #C3C3C3;
   background-clip: padding-box;
-  border: solid 5px transparent;
-  border-radius: 1em;
+  border: solid 2px transparent;
+  border-radius: 50px;
 }
 .gradient-box:before {
   content: "";
@@ -21,7 +20,7 @@
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -5px;
+  margin: -2px;
   border-radius: inherit;
-  background: linear-gradient(to right, red, orange);
+  background: linear-gradient(to bottom, white, #4F4F4F);
 }
