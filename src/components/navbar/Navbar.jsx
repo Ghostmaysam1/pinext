@@ -4,7 +4,7 @@ import { Link } from "react-router"
 function Navbar({ className }) {
     let cls = className ? ' ' + className : '';
     return (
-        <div className={"h-[110px] flex gap-[55px] bg-background items-center pt-[20px] justify-center" + cls}>
+        <div className={"h-[100px] flex z-50 gap-[55px] bg-background items-center  justify-center" + cls}>
             <img src="logo.svg" alt="logo" className="w-[78px]" />
             <div className="h-full w-[60%] flex justify-center items-center">
                 <ul className="flex justify-center items-center gap-5">

@@ -6,7 +6,6 @@ function AudienceSection() {
     const [selectedTab, setSelectedTab] = useState('برای همه');
 
     function onClickHandler(name) {
-        console.log('selected is now', name)
         setSelectedTab(name)
     }
 

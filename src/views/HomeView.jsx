@@ -2,6 +2,7 @@ import Navbar from "../components/navbar/Navbar.jsx"
 import AudienceSection from "../components/home/audienceSection/AudienceSection.jsx"
 import ServicesButton from "../components/home/servicesButton/ServicesButton.jsx"
 import QuoteBanner from "../components/home/quoteBanner/QuoteBanner.jsx"
+import Portfolio from "../components/home/portfolio/Portfolio.jsx"
 
 function HomeView() {
     return (
@@ -14,6 +15,9 @@ function HomeView() {
             {/* TODO */}
             <span className="h-[20px] w-full block"></span>
             <QuoteBanner />
+            <span className="h-[50px] w-full block"></span>
+            <Portfolio />
+            <span className="h-[50px] w-full block"></span>
         </div>
     )
 }
