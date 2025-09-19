@@ -1,42 +1,19 @@
 @import 'tailwindcss';
 
 @font-face {
-    font-family: 'iransansX';
-    src: url('./assets/IRANSansX-Regular.ttf');
+    font-family: 'iransans';
+    src: url('./assets/IRANSansX-Regular.ttf') format('ttf');
     font-weight: 500
 }
 @font-face {
-    font-family: 'iransansX';
-    src: url('./assets/IRANSansX-DemiBold.ttf');
+    font-family: 'iransans';
+    src: url('./assets/IRANSansX-DemiBold.ttf') format('ttf');
     font-weight: 600
-}
-
-/* @font-face {
-    font-family: 'Vazirmatn';
-    src: url('./assets/vazirmatn/Vazir-Medium.ttf') format('ttf');
-    src: url('./assets/vazirmatn/Vazir-Medium.woff') format('woff');
-    src: url('./assets/vazirmatn/Vazir-Medium.woff2') format('woff2');
-    font-weight: 500
-}
-
-@font-face {
-    font-family: 'Vazirmatn';
-    src: url('./assets/vazirmatn/Vazir-Bold.ttf') format('ttf');
-    src: url('./assets/vazirmatn/Vazir-Bold.woff') format('woff');
-    src: url('./assets/vazirmatn/Vazir-Bold.woff2') format('woff2');
-    font-weight: 700
-} */
-
-.body-text {
-    font-family: 'iransansX';
-    font-size: 16px;
-    font-weight: var(--font-weight-medium);
 }
 
 @theme {
     /* fonts */
-    --font-iransans: 'iransansX'
-    /* --font-vazirmatn: 'Vazirmatn' */
+    --font-iransans: 'iransans'
 
     --color-alert: #FF715B;
     --color-disable-text: #9E9EA7;
@@ -74,29 +51,34 @@
 }
 
 @layer base {
+    p {
+        font-family: var(--font-iransans);
+        font-size: 16px;
+        font-weight: var(--font-weight-medium);
+    }
     h1 {
       font-size: 48px;
       font-weight: var(--font-weight-bold);
-      font-family: 'iransansX';
+      font-family: var(--font-iransans);
     }
     h2 {
       font-size: 39px;
       font-weight: var(--font-weight-medium);
-      font-family: 'iransansX';
+      font-family: var(--font-iransans);
     }
     h3 {
         font-size: 31px;
         font-weight: var(--font-weight-medium);
-        font-family: 'iransansX';
+        font-family: var(--font-iransans);
     }
     h4 {
         font-size: 25px;
         font-weight: var(--font-weight-medium);
-        font-family: 'iransansX';
+        font-family: var(--font-iransans);
     }
     h5 {
         font-size: 20px;
         font-weight: var(--font-weight-medium);
-        font-family: 'iransansX';
+        font-family: var(--font-iransans);
     }
 }
