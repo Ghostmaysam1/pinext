@@ -3,6 +3,7 @@ import AudienceSection from "../components/home/audienceSection/AudienceSection.
 import ServicesButton from "../components/home/servicesButton/ServicesButton.jsx"
 import QuoteBanner from "../components/home/quoteBanner/QuoteBanner.jsx"
 import Portfolio from "../components/home/portfolio/Portfolio.jsx"
+import Articles from "../components/home/Articles/Articles.jsx"
 
 function HomeView() {
     return (
@@ -12,12 +13,13 @@ function HomeView() {
             <AudienceSection />
             <span className="h-[140px] w-full block"></span>
             <ServicesButton />
-            {/* TODO */}
             <span className="h-[20px] w-full block"></span>
             <QuoteBanner />
             <span className="h-[50px] w-full block"></span>
             <Portfolio />
-            <span className="h-[50px] w-full block"></span>
+            <span className="h-[150px] w-full block"></span>
+            <Articles />
+            <span className="h-[150px] w-full block"></span>
         </div>
     )
 }
