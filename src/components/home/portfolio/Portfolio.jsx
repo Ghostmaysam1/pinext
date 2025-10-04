@@ -4,7 +4,7 @@ import ProjectBox from "./components/projectBox/ProjectBox"
 
 import portfolio_1 from '/portfolios/sample1.png'
 import chevron_down from '/chevron_down.svg'
-
+ 
 const projects = [
     { description: "lorem ipsum dollar", image: portfolio_1 },
     { description: "lorem ipsum dollar", image: portfolio_1 },
