@@ -5,6 +5,7 @@ import QuoteBanner from "../components/home/quoteBanner/QuoteBanner.jsx"
 import Portfolio from "../components/home/portfolio/Portfolio.jsx"
 import Articles from "../components/home/Articles/Articles.jsx"
 import FAQ from "../components/home/FAQ/FAQ.jsx"
+import Services from "../components/home/Services/Services.jsx"
 
 function HomeView() {
     return (
@@ -16,7 +17,9 @@ function HomeView() {
             <ServicesButton />
             <span className="h-[20px] w-full block"></span>
             <QuoteBanner />
-            <span className="h-[50px] w-full block"></span>
+            <span className="h-[130px] w-full block"></span>
+            <Services />
+            <span className="h-[130px] w-full block"></span>
             <Portfolio />
             <span className="h-[150px] w-full block"></span>
             <Articles />
