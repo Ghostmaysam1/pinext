@@ -6,6 +6,7 @@ import Portfolio from "../components/home/portfolio/Portfolio.jsx"
 import Articles from "../components/home/Articles/Articles.jsx"
 import FAQ from "../components/home/FAQ/FAQ.jsx"
 import Services from "../components/home/Services/Services.jsx"
+import Footer from "../components/footer/Footer.jsx"
 
 function HomeView() {
     return (
@@ -25,6 +26,8 @@ function HomeView() {
             <Articles />
             <span className="h-[185px] w-full block"></span>
             <FAQ />
+            <span className="h-[120px] w-full block"></span>
+            <Footer />
         </div>
     )
 }
