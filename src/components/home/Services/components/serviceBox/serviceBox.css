@@ -1,0 +1,11 @@
+.service-box::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 60px;
+    background-color: #474151;
+    border-radius: 0 12px 12px 0;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+}
