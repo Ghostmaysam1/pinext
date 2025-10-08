@@ -2,7 +2,7 @@ import { Link } from "react-router"
 
 function Article({name, date, id}) {
     return (
-        <div className="flex flex-col w-[273px] h-[372px] gap-2">
+        <div className="flex flex-col w-[80%] md:w-[273px] h-[372px] gap-2">
             <div className="bg-[#B5B5B5] w-full h-[270px] rounded-[12px] relative">
                 <span className="absolute bottom-0 px-2 py-1 bg-[#E7E7E777] right-0 rounded-br-[12px] rounded-tl-[12px] text-[12px]">{date}</span>
             </div>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import { LayoutTemplate, Smartphone, Boxes, Headset } from "lucide-react";
 import './serviceBox.css';
 
@@ -9,30 +9,37 @@ function ServiceBox({ icon, title, description, state }) {
         setIsOpen(v => !v);
     }
 
+    const renderIcon = () => {
+        switch (icon) {
+            case 'smartphone': return <Smartphone size={30} />;
+            case 'boxes': return <Boxes size={30} />;
+            case 'layout-template': return <LayoutTemplate size={30} />;
+            case 'headset': return <Headset size={30} />;
+            default: return null;
+        }
+    };
+
     return (
-        <div className='service-box relative'>
+        <div className='service-box relative z-20 w-full max-w-[600px]'>
             <div
                 onClick={handleClick}
-                className={`shadow-md transition-all duration-100 ease-in-out overflow-hidden w-[600px] border border-[#9E9EA735] p-5 rounded-[16px] flex flex-col gap-4 ${isOpen ? 'h-[300px]' : 'h-[100px] cursor-pointer'}`}>
-                <div className="flex justify-end gap-2 transition duration-300 ease-in-out items-center" style={isOpen ? { flexDirection: 'column-reverse', alignItems: 'flex-end' } : {}}>
-                    <h4>{title}</h4>
-                    <span className="w-[60px] h-[60px] flex justify-center items-center rounded-full bg-secondary">
-                        {
-                            icon == 'smartphone' ?
-                                <Smartphone size={30} /> : icon == 'boxes' ?
-                                    <Boxes size={30} /> : icon == 'layout-template' ?
-                                        <LayoutTemplate size={30} /> : icon == 'headset' ?
-                                            <Headset size={30} /> : ''
-                        }
+                className={`shadow-md border border-[#9E9EA735] p-5 rounded-[16px] flex flex-col gap-4 cursor-pointer ${isOpen ? 'overflow-visible' : 'h-[100px] overflow-hidden'}`}>
+
+                <div className="flex items-start justify-between gap-4">
+                    <h5 className='text-right flex-1 break-words min-w-0 font-semibold'>{title}</h5>
+                    <span className="shrink-0 w-[60px] h-[60px] flex justify-center items-center rounded-full bg-secondary">
+                        {renderIcon()}
                     </span>
                 </div>
-                <div className="flex justify-end text-right">
-                    <p>{description}</p>
-                </div>
 
+                {isOpen && (
+                    <div className="flex justify-end text-right mt-2">
+                        <p className="break-words leading-relaxed">{description}</p>
+                    </div>
+                )}
             </div>
         </div>
-    )
+    );
 }
 
 export default ServiceBox;
