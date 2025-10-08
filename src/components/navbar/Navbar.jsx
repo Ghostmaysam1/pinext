@@ -2,7 +2,7 @@ import { useState } from "react";
 import MobileMenu from "./components/mobileMenu/MobileMenu";
 
 function Navbar({ className }) {
-    const [isMenuOpen, setIsMenuOpen] = useState(true)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     let cls = className ? ' ' + className : '';
     const menuItems = [
