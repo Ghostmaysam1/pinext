@@ -7,7 +7,7 @@ function Input() {
                 <SendHorizonal color="#4B5563" className="cursor-pointer" />
                 <Smile color="#4B5563" className="cursor-pointer" />
             </div>
-            <p className="text-[15px] text-text select-none cursor-text">روی سوال مورد نظر خود کلیک کنید</p>
+            <p className="text-sm md:text-[16px] text-text select-none cursor-text">روی سوال مورد نظر خود کلیک کنید</p>
         </div>
     )
 }

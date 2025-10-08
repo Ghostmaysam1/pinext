@@ -23,17 +23,24 @@ function Services() {
             description: 'توسعه نرم‌افزار پایان کار نیست. ما خدمات پشتیبانی، نگهداری و به‌روزرسانی نرم‌افزار را ارائه می‌دهیم تا مطمئن شوید سیستم‌های شما همیشه به‌روز، ایمن و پایدار باقی می‌مانند. تیم ما به صورت ۲۴/۷ آماده پاسخگویی و ارائه راهکار برای رفع مشکلات احتمالی است.'
         }
     }
+
     return (
-        <div className="flex flex-col gap-12">
-            <div className="flex justify-center" >
+        <div className="flex flex-col gap-8 lg:gap-12 px-4 lg:px-0">
+            <div className="flex justify-center">
                 <ServiceBox icon={services.web.icon} title={services.web.title} description={services.web.description} state={1} />
             </div>
-            <div className=" flex justify-center gap-12">
-                <ServiceBox icon={services.systems.icon} title={services.systems.title} description={services.systems.description}  />
-                <ServiceBox icon={services.mobile.icon} title={services.mobile.title} description={services.mobile.description} />
+
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 lg:gap-12 flex-wrap">
+                <div className="w-full md:w-[45%] max-w-[600px]">
+                    <ServiceBox icon={services.systems.icon} title={services.systems.title} description={services.systems.description} state={1} />
+                </div>
+                <div className="w-full md:w-[45%] max-w-[600px]">
+                    <ServiceBox icon={services.mobile.icon} title={services.mobile.title} description={services.mobile.description} state={1} />
+                </div>
             </div>
-            <div className="flex justify-center" >
-                <ServiceBox icon={services.update.icon} title={services.update.title} description={services.update.description} />
+
+            <div className="flex justify-center">
+                <ServiceBox icon={services.update.icon} title={services.update.title} description={services.update.description} state={1} />
             </div>
         </div>
     )

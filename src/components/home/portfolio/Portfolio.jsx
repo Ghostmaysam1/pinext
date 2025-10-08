@@ -6,15 +6,16 @@ import portfolio_1 from '/portfolios/sample1.png'
 import chevron_down from '/chevron_down.svg'
  
 const projects = [
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 },
-    { description: "lorem ipsum dollar", image: portfolio_1 }
+    {id: 1, description: "پروژه اپلیکیشن دانشگاه", image: portfolio_1 },
+    {id: 2, description: "پروژه سایت موشکی", image: portfolio_1 },
+    {id: 3, description: "پروژه اپلیکیشن موشک من", image: portfolio_1 },
+    {id: 4, description: "پروژه سئو دیجیکالا", image: portfolio_1 },
+    {id: 5, description: "پروژه اپلیکیشن دیجیکالا", image: portfolio_1 },
+    {id: 6, description: "پروژه سایت ریاست جمهوری", image: portfolio_1 },
+    {id: 7, description: "پروژه سایت شهرداری", image: portfolio_1 },
+    {id: 9, description: "پروژه سایت راه و شهرسازی", image: portfolio_1 },
+    {id: 8, description: "پروژه سایت اراک", image: portfolio_1 },
+    {id: 9, description: "پروژه سایت ساوه", image: portfolio_1 }
 ]
 
 function Portfolio() {
@@ -39,7 +40,7 @@ function Portfolio() {
             <div className="w-[90%] flex gap-4 justify-evenly flex-wrap">
                 {
                     projects.slice(0, showNumber).map(p => (
-                        <ProjectBox description={p.description} image={p.image} />
+                        <ProjectBox description={p.description} key={p.id} image={p.image} />
                     ))
                 }
             </div>

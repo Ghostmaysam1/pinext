@@ -1,0 +1,30 @@
+.service-box::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 60px;
+    background-color: #474151;
+    border-radius: 0 12px 12px 0;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+}
+
+.service-box h5 {
+    word-break: break-word;
+    hyphens: auto;
+    line-height: 1.4;
+}
+
+.service-box .flex-1 {
+    min-width: 0;
+}
+
+.service-box > div {
+    transition: all 0.2s ease;
+}
+
+.service-box > div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}

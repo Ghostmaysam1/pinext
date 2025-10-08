@@ -1,12 +1,18 @@
-function ContentCard({tabs, selectedTab}) {
-    const text = tabs.filter(val=>{
-        return val.name == selectedTab
-    })[0].text
+import { useMemo } from 'react';
+
+function ContentCard({ tabs = [], selectedTab }) {
+
+    const content = useMemo(() => {
+        return tabs.find(tab => tab.name === selectedTab)?.text || '';
+    }, [tabs, selectedTab]);
+
     return (
-        <div dir="rtl" style={{boxShadow: '0 0 27px #00000020'}} className="w-180 p-8 text-justify h-76 rounded-xl bg-background">
-            {text}
+        <div dir="rtl" className="w-[90%] max-w-180 p-8 h-76 rounded-xl bg-background shadow-[0_0_27px_rgba(0,0,0,0.12)] overflow-hidden">
+            <div className='text-justify h-full overflow-auto custom-scrollbar transition-opacity duration-200'>
+                {content}
+            </div>
         </div>
-    )
+    );
 }
 
 export default ContentCard;
